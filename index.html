@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JBL 520 Rental — MC</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;font-family:Inter,system-ui,sans-serif;background:radial-gradient(ellipse at top,#222 0%,#111 40%,#080808 100%);color:#e9eef6;display:flex;align-items:center;justify-content:center;padding:24px}
+  
+  .scene{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;width:100%;max-width:1100px}
+  
+  .card-wrap{width:100%;max-width:520px;perspective:1200px;display:flex;justify-content:center}
+  
+  .card{
+    width:100%;
+    background:linear-gradient(180deg,#0f1113,#0b0c0d);
+    border-radius:12px;
+    padding:22px;
+    box-shadow:0 30px 60px rgba(0,0,0,.7),0 8px 18px rgba(0,0,0,.6);
+    border:1px solid rgba(255,255,255,0.04);
+    position:relative;
+    overflow:hidden;
+    transform:rotate(0deg);
+    transition:transform 0.3s ease;
+  }
+
+  .card:hover{
+    transform:rotate(-2deg);
+  }
+
+  .card:before{content:"";position:absolute;inset:0;background:radial-gradient(transparent,rgba(0,0,0,.35));pointer-events:none}
+
+  .card .shine{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(90deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.02) 100%);
+    transform:translateX(-120%);
+    transition:transform 1.2s ease;
+  }
+
+  .card:hover .shine{transform:translateX(120%)}
+
+  .top-row{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+  .icon-circle{width:38px;height:38px;border-radius:8px;background:linear-gradient(135deg,#0d6bff,#00e6c2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .label{font-size:13px;color:#9fb3c9;letter-spacing:.08em}
+  .tagline{color:#5fd4ff;font-weight:700;letter-spacing:.06em}
+  h1.brand{font-size:32px;margin:8px 0;color:#fff}
+  
+  .wave-holder{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:12px 0}
+  .wave{width:100%;height:32px}
+  .muted{font-size:12px;color:#86a2b8}
+  
+  .contact{position:absolute;right:12px;bottom:12px;text-align:right}
+  .contact .name{font-weight:800;font-size:20px}
+  .contact a{display:block;color:#cfeefd;font-size:12px;margin-top:2px;text-decoration:none}
+  .contact a:hover{text-decoration:underline}
+  
+  .speaker{position:absolute;left:12px;bottom:12px;width:28px;height:28px}
+  .qr{position:absolute;left:12px;top:12px;width:48px;height:48px;border-radius:6px;overflow:hidden;background:#0b0b0b;border:1px solid rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center}
+  
+  .info{flex:1;min-width:280px;padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);box-shadow:0 10px 30px rgba(3,6,10,.6)}
+  .info h2{font-size:18px;margin-bottom:8px}
+  .info p{color:#c9d9e6;margin-bottom:12px;line-height:1.4;font-size:14px}
+  .features{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .feature{background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:6px;font-size:12px;color:#cfeefd}
+  .cta-row{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,#00ffd5,#00a1ff);color:#041018;font-weight:700;border:none;cursor:pointer;font-size:13px}
+  .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dbefff}
+
+  @media(max-width:600px){.scene{flex-direction:column;gap:16px;padding:12px}.card{padding:16px}.info{padding:12px}}
+</style>
+</head>
+<body>
+<div class="scene">
+
+  <div class="card-wrap">
+    <div class="card" role="img" aria-label="JBL 520 rental business card">
+      <div class="qr"><svg viewBox="0 0 24 24"><rect x="1" y="1" width="6" height="6" fill="#07121a" stroke="#0aa6d9" stroke-width="0.5"/><rect x="1" y="9" width="4" height="4" fill="#07121a" stroke="#0aa6d9" stroke-width="0.5"/><rect x="9" y="1" width="4" height="4" fill="#07121a" stroke="#0aa6d9" stroke-width="0.5"/><rect x="16" y="16" width="6" height="6" fill="#07121a" stroke="#0aa6d9" stroke-width="0.5"/><rect x="9" y="9" width="6" height="6" fill="#07121a"/></svg></div>
+      <div class="top-row">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10v4h4l5 4V6L7 10H3z" fill="#041018"/><path d="M16.5 8.5c1.5 1.5 1.5 3.5 0 5" stroke="#041018" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="label">JBL 520 RENTAL</div><div class="tagline">FEEL THE BASS.</div></div>
+      </div>
+      <h1 class="brand">MC</h1>
+      <div class="wave-holder">
+        <svg class="wave" viewBox="0 0 600 80" preserveAspectRatio="none"><path class="animate" d="M0 40 C50 10, 100 70, 150 40 S250 10, 300 40 S400 70, 450 40 S550 10, 600 40" stroke="#51f0ff" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        <div class="muted">Featuring the JBL 520: Power & Clarity</div>
+      </div>
+      <div class="speaker"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="6" height="14" rx="1" fill="#07121a" stroke="#84dfff" stroke-width="0.8"/><circle cx="16" cy="12" r="4" fill="#07121a" stroke="#84dfff" stroke-width="0.8"/></svg></div>
+      <div class="contact">
+        <div class="name">MC</div>
+        <a href="tel:09077741399">0907 774 1399</a>
+        <a href="mailto:micotubice@gmail.com">micotubice@gmail.com</a>
+      </div>
+      <div class="shine"></div>
+    </div>
+  </div>
+
+  <div class="info">
+    <h2>JBL 520 Rental — MC</h2>
+    <p>High-quality JBL 520 speaker rentals for parties and events. </p>
+    <div class="features">
+      <div class="feature">Powerful Bass</div>
+      <div class="feature">Plug & Play</div>
+      <div class="feature">Event Support</div>
+      <div class="feature">Delivery & Pickup</div>
+    </div>
+    <p class="muted">Fast contact — call or email to reserve. Add-ons available on request.</p>
+    <div class="cta-row">
+      <a class="btn" 
+     href="https://1drv.ms/x/c/446cf8c417cc1bd6/ER235E1mTJZPhFVzJx8l7S0BwFi4YKGDPM-kbgL7XC81BQ?e=cuwwRY"
+     target="_blank">Reserve Now</a>
+    <a href="https://web.facebook.com/mico.tubice/"  target="_blank">  <button class="btn secondary" id="downloadVcard">Booked Now</button></a>
+    </div>
+    <p style="margin-top:8px;font-size:12px;color:#9fb3c9">Location: Virac, Catanduanes • Professional & reliable service.</p>
+  </div>
+
+</div>
+
+<script>
+document.getElementById('reserveBtn').addEventListener('click',()=>{window.location.href='tel:09077741399';setTimeout(()=>{window.location.href='mailto:micotubice@gmail.com?subject=JBL%20520%20rental%20booking';},800)});
+document.getElementById('downloadVcard').addEventListener('click',()=>{
+  let vcard=['BEGIN:VCARD','VERSION:3.0','N:;MC;;','FN:MC','ORG:JBL 520 Rental','TEL;TYPE=CELL:09077741399','EMAIL:micotubice@gmail.com','ADR:;;Virac;Catanduanes;;;','NOTE:JBL 520 speaker rental — Feel the bass.','END:VCARD'].join('\r\n');
+  let blob=new Blob([vcard],{type:'text/vcard'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='MC-JBL520.vcf';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(a.href);
+});
+</script>
+</body>
+</html>
